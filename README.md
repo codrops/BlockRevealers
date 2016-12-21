@@ -6,6 +6,8 @@ Ideas for revealing content in a schematic box look as seen around the Web latel
 
 [Demo](https://tympanus.net/Development/BlockRevealers/)
 
+This demo is sponsored by [Hack Reactor: Your CS success starts here](https://goo.gl/zAoxvr)
+
 ## License
 
 Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
