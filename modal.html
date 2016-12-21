@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Block Reveal Effects | Modal | Codrops</title>
+		<meta name="description" content="Ideas for revealing content in a schematic box look." />
+		<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/pater.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-modal">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<a class="pater" href="https://goo.gl/zAoxvr">
+				<img class="pater__img" src="img/sponsor/HackReactorLogo.svg" alt="Hack Reactor" />
+				<div class="pater__text">
+					<h2 class="pater__title">Your CS success starts here.</h2>
+					<p class="pater__desc">Hack Reactor's 12-week immersive coding school is accepting applications for onsite and online courses. <strong>Apply now and become a software engineer.</strong></p>
+				</div>
+			</a>
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MusicalInteractions/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+					<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=29372" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+				</div>
+				<h1 class="codrops-header__title">Block Reveal Effects</h1>
+				<nav class="demos">
+					<a class="demo" href="index.html">Overview</a>
+					<a class="demo" href="menu.html">Menu</a>
+					<a class="demo demo--current" href="modal.html">Modal</a>
+					<a class="demo" href="form.html">Form</a>
+					<a class="demo" href="split.html">Split layout</a>
+					<a class="github" href="https://github.com/codrops/BlockRevealers/">/Github</a>
+				</nav>
+			</header>
+			<section class="content flexy">
+				<div class="box">
+					<h3 class="content__title content__title--small content__title--enclosed">Delete all my data</h3>
+					<p>If you decide to delete all your data, we will retain no backup and everything will be lost forever.</p>
+					<button class="btn btn--default btn--modal-open">Delete all</button>
+				</div>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<h2>If you enjoyed this demo you might also like:</h2>
+				<a class="media-item" href="https://tympanus.net/Tutorials/PageRevealEffects/">
+					<img class="media-item__img" src="img/related/PageRevealEffects.png">
+					<h3 class="media-item__title">Multi-Layer Page Reveal Effects</h3>
+				</a>
+				<a class="media-item" href="https://tympanus.net/Development/ImageGridEffects/">
+					<img class="media-item__img" src="img/related/ImageGridEffects.png">
+					<h3 class="media-item__title">Image Grid Effects</h3>
+				</a>
+			</section>
+			<div class="modal">
+				<div class="modal__inner">
+					<h3 class="modal__title">Seriously?!</h3>
+					<p class="modal__text">Are you sure you want to delete ALL your data from the database?</p>
+					<button class="btn btn--default">Delete</button>
+					<button class="btn btn--default btn--modal-close">Cancel</button>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var modalEl = document.querySelector('.modal'),
+				revealer = new RevealFx(modalEl),
+				deleteCtrl = modalEl.querySelector('.btn--default'),
+				closeCtrl = modalEl.querySelector('.btn--modal-close');
+
+			document.querySelector('.btn--modal-open').addEventListener('click', function() {
+				modalEl.classList.add('modal--open');
+				revealer.reveal({
+					bgcolor: '#7f40f1',
+					direction: 'tb',
+					duration: 400, 
+					easing: 'easeOutCirc',
+					onCover: function(contentEl, revealerEl) {
+						contentEl.style.opacity = 1;
+					},
+					onComplete: function() {
+						closeCtrl.addEventListener('click', closeModal);
+						deleteCtrl.addEventListener('click', closeModal);
+					}
+				});
+			});
+
+			function closeModal(ev) {
+				closeCtrl.removeEventListener('click', closeModal);
+				deleteCtrl.removeEventListener('click', closeModal);
+				modalEl.classList.remove('modal--open');
+				revealer.reveal({
+					bgcolor: ev.target.classList.contains('btn--modal-close') ? '#7f40f1' : '#40f180',
+					direction: 'bt',
+					duration: ev.target.classList.contains('btn--modal-close') ? 200 : 400, 
+					easing: 'easeOutCirc',
+					onCover: function(contentEl, revealerEl) {
+						contentEl.style.opacity = 0;
+					},
+					onComplete: function() {
+						modalEl.classList.remove('modal--open');
+					}
+				});
+			}
+		})();
+		</script>
+	</body>
+</html>

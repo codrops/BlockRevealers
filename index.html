@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Block Reveal Effects | Overview | Codrops</title>
+		<meta name="description" content="Ideas for revealing content in a schematic box look." />
+		<meta name="keywords" content="javascript, plugin, reveal, effect, demo, web development, web design, template" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/pater.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-overview loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<section class="content content--full flexy intro">
+				<a class="pater" href="https://goo.gl/zAoxvr">
+					<img class="pater__img" src="img/sponsor/HackReactorLogo.svg" alt="Hack Reactor" />
+					<div class="pater__text">
+						<h2 class="pater__title">Your CS success starts here.</h2>
+						<p class="pater__desc">Hack Reactor's 12-week immersive coding school is accepting applications for onsite and online courses. <strong>Apply now and become a software engineer.</strong></p>
+					</div>
+				</a>
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MusicalInteractions/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=29372" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Block Reveal Effects</h1>
+					<nav class="demos">
+						<a class="demo demo--current" href="index.html">Overview</a>
+						<a class="demo" href="menu.html">Menu</a>
+						<a class="demo" href="modal.html">Modal</a>
+						<a class="demo" href="form.html">Form</a>
+						<a class="demo" href="split.html">Split layout</a>
+						<a class="github" href="https://github.com/codrops/BlockRevealers/">/Github</a>
+					</nav>
+				</header>
+				<h2 class="content__title content__title--center">
+					<div id="rev-1" class="content__title__inner">Self-imposed</div><br/>
+					<div id="rev-2" class="content__title__inner content__title__inner--offset-1">limitations</div>
+				</h2>
+			</section>
+			<p class="content__heading">On-scroll examples</p>
+			<section class="content content--full flexy flexy--row">
+				<h2 class="content__title content__title--medium content__title--half content__title--right">
+					<div id="rev-4" class="content__title__inner">funky foxes love</div><br/>
+					<div id="rev-5" class="content__title__inner content__title__inner--offset-2">technology</div>
+				</h2>
+				<div id="rev-3" class="content__image-wrap content__image-wrap--half">
+					<img class="content__image" src="img/1.jpg" alt="Some image"/>
+				</div>
+			</section>
+			<section class="content content--full flexy flexy--row">
+				<div id="rev-6" class="content__image-wrap content__image-wrap--half">
+					<img class="content__image" src="img/2.jpg" alt="Some image"/>
+				</div>
+				<h2 class="content__title content__title--medium content__title--half content__title--left">
+					<div id="rev-7" class="content__title__inner">fierce bears make</div><br/>
+					<div id="rev-8" class="content__title__inner content__title__inner--offset-2">responsiveness</div>
+				</h2>
+			</section>
+			<section class="content content--full flexy flexy--row">
+				<h2 class="content__title content__title--medium content__title--half content__title--right">
+					<div id="rev-10" class="content__title__inner">fresh meerkats dig</div><br/>
+					<div id="rev-11" class="content__title__inner content__title__inner--offset-2">team play</div>
+				</h2>
+				<div id="rev-9" class="content__image-wrap content__image-wrap--half">
+					<img class="content__image" src="img/3.jpg" alt="Some image"/>
+				</div>
+			</section>
+			<section class="content flexy flexy--row">
+				<p class="content__heading">Other examples: Try it yourself</p>
+				<div class="triggers">
+					<button id="rev-trigger-1" class="btn btn--trigger">left to right</button>
+					<button id="rev-trigger-2" class="btn btn--trigger">right to left, oh yes</button>
+					<button id="rev-trigger-3" class="btn btn--trigger">from the bottom + extra</button>
+					<button id="rev-trigger-4" class="btn btn--trigger">come from the top</button>
+					<button id="rev-trigger-5" class="btn btn--trigger">show me some color</button>
+				</div>
+				<h2 id="rev-12" class="content__title content__title--medium">Superlative</h2>
+			</section>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<nav class="demos">
+					<span class="demo">More demos:</span>
+					<a class="demo demo--current" href="index.html">Overview</a>
+					<a class="demo" href="menu.html">Menu</a>
+					<a class="demo" href="modal.html">Modal</a>
+					<a class="demo" href="form.html">Form</a>
+					<a class="demo" href="split.html">Split layout</a>
+					<a class="github" href="https://github.com/codrops/BlockRevealers/">/Github</a>
+				</nav>
+				<h2>If you enjoyed this demo you might also like:</h2>
+				<a class="media-item" href="https://tympanus.net/Tutorials/PageRevealEffects/">
+					<img class="media-item__img" src="img/related/PageRevealEffects.png">
+					<h3 class="media-item__title">Multi-Layer Page Reveal Effects</h3>
+				</a>
+				<a class="media-item" href="https://tympanus.net/Development/ImageGridEffects/">
+					<img class="media-item__img" src="img/related/ImageGridEffects.png">
+					<h3 class="media-item__title">Image Grid Effects</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			// Fake loading.
+			setTimeout(init, 1000);
+
+			function init() {
+				document.body.classList.remove('loading');
+
+				//************************ Example 1 - reveal on load ********************************
+				
+				var rev1 = new RevealFx(document.querySelector('#rev-1'), {
+					revealSettings : {
+						bgcolor: '#7f40f1',
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev1.reveal();
+
+				var rev2 = new RevealFx(document.querySelector('#rev-2'), {
+					revealSettings : {
+						bgcolor: '#fcf652',
+						delay: 250,
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev2.reveal();
+
+				//************************ Example 2 - reveal on scroll ********************************
+				
+				var scrollElemToWatch_1 = document.getElementById('rev-3'),
+					watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
+					rev3 = new RevealFx(scrollElemToWatch_1, {
+						revealSettings : {
+							bgcolor: '#fcf652',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev4 = new RevealFx(document.querySelector('#rev-4'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev5 = new RevealFx(document.querySelector('#rev-5'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+
+					scrollElemToWatch_2 = document.getElementById('rev-6'),
+					watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),
+					rev6 = new RevealFx(scrollElemToWatch_2, {
+						revealSettings : {
+							bgcolor: '#fcf652',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev7 = new RevealFx(document.querySelector('#rev-7'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							direction: 'rl',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev8 = new RevealFx(document.querySelector('#rev-8'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							direction: 'rl',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+
+					scrollElemToWatch_3 = document.getElementById('rev-9'),
+					watcher_3 = scrollMonitor.create(scrollElemToWatch_3, -300),
+					rev9 = new RevealFx(scrollElemToWatch_3, {
+						revealSettings : {
+							bgcolor: '#fcf652',
+							direction: 'rl',
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev10 = new RevealFx(document.querySelector('#rev-10'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							delay: 250,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					}),
+					rev11 = new RevealFx(document.querySelector('#rev-11'), {
+						revealSettings : {
+							bgcolor: '#7f40f1',
+							delay: 500,
+							onCover: function(contentEl, revealerEl) {
+								contentEl.style.opacity = 1;
+							}
+						}
+					});
+
+				watcher_1.enterViewport(function() {
+					rev3.reveal();
+					rev4.reveal();
+					rev5.reveal();
+					watcher_1.destroy();
+				});
+				watcher_2.enterViewport(function() {
+					rev6.reveal();
+					rev7.reveal();
+					rev8.reveal();
+					watcher_2.destroy();
+				});
+				watcher_3.enterViewport(function() {
+					rev9.reveal();
+					rev10.reveal();
+					rev11.reveal();
+					watcher_3.destroy();
+				});
+
+				//************************ Example 3 - api examples ********************************
+				
+				var rev12 = new RevealFx(document.querySelector('#rev-12')),
+					trigger_1 = document.getElementById('rev-trigger-1'),
+					trigger_2 = document.getElementById('rev-trigger-2'),
+					trigger_3 = document.getElementById('rev-trigger-3'),
+					trigger_4 = document.getElementById('rev-trigger-4'),
+					trigger_5 = document.getElementById('rev-trigger-5');
+				
+				trigger_1.addEventListener('click', function() {
+					rev12.reveal({
+						bgcolor: '#c1c0b7',
+						duration: 300,
+						onStart: function(contentEl, revealerEl) { contentEl.style.opacity = 0; },
+						onCover: function(contentEl, revealerEl) { contentEl.style.opacity = 1; }
+					});
+				});
+
+				trigger_2.addEventListener('click', function() {
+					rev12.reveal({
+						bgcolor: '#c1c0b7',
+						duration: 300,
+						direction: 'rl',
+						onStart: function(contentEl, revealerEl) { contentEl.style.opacity = 0; },
+						onCover: function(contentEl, revealerEl) { contentEl.style.opacity = 1; }
+					});
+				});
+
+				trigger_3.addEventListener('click', function() {
+					rev12.reveal({
+						bgcolor: '#c1c0b7',
+						easing: 'easeOutExpo',
+						direction: 'bt',
+						onStart: function(contentEl, revealerEl) { 
+							anime.remove(contentEl);
+							contentEl.style.opacity = 0; 
+						},
+						onCover: function(contentEl, revealerEl) { 
+							anime({
+								targets: contentEl,
+								duration: 800,
+								delay: 80,
+								easing: 'easeOutExpo',
+								translateY: [40,0],
+								opacity: [0,1]
+							});
+						}
+					});
+				});
+
+				trigger_4.addEventListener('click', function() {
+					rev12.reveal({
+						bgcolor: '#c1c0b7',
+						duration: 300,
+						direction: 'tb',
+						onStart: function(contentEl, revealerEl) { 
+							anime.remove(contentEl);
+							contentEl.style.opacity = 0; 
+						},
+						onCover: function(contentEl, revealerEl) { 
+							anime({
+								targets: contentEl,
+								duration: 500,
+								delay: 50,
+								easing: 'easeOutBounce',
+								translateY: [-40,0],
+								opacity: {
+									value: [0,1],
+									duration: 300,
+									easing: 'linear'
+								}
+							});
+						}
+					});
+				});
+
+				trigger_5.addEventListener('click', function() {
+					rev12.reveal({
+						bgcolor: '#7f40f1',
+						duration: 400,
+						easing: 'easeInOutQuad',
+						onStart: function(contentEl, revealerEl) { 
+							anime.remove(contentEl);
+							contentEl.style.opacity = 0; 
+						},
+						onCover: function(contentEl, revealerEl) { 
+							contentEl.style.opacity = 1; 
+							anime({
+								targets: contentEl,
+								duration: 800,
+								delay: 80,
+								easing: 'easeOutExpo',
+								scale: [0.5,1],
+								opacity: [0,1]
+							});
+						}
+					});
+				});
+			}
+		})();
+		</script>
+	</body>
+</html>

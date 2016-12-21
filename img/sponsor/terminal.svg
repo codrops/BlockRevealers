@@ -1,0 +1,58 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="457" height="300.66" viewBox="0 0 457 300.66">
+    <defs>
+        <style>
+        .cls-1 { fill: none; }
+        .cls-1,
+        .cls-2 { stroke: #fff; stroke-miterlimit: 10; stroke-width: 3px; }
+        .cls-2 { fill: #3d3935; }
+        .cls-3,
+        .cls-4,
+        .cls-5 { fill: #fff; }
+        .cls-4 { font-size: 13px; }
+        .anim { -webkit-animation: blink 1s step-end infinite; animation: blink 1s step-end infinite; }
+        @-webkit-keyframes blink {
+            50% { opacity: 0; }
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .cls-4,
+        .cls-5 { font-family: Courier New; font-weight: 400; }
+        .cls-5 { font-size: 10px; }
+        .cls-6 { white-space: pre; white-space: -moz-pre-space;}
+        </style>
+    </defs>
+    <title>terminal</title>
+    <rect class="cls-1" x="1.5" y="1.5" width="454" height="20.31" />
+    <rect class="cls-2" x="1.5" y="21.69" width="454" height="277.47" />
+    <circle class="cls-3" cx="12.53" cy="11.36" r="3.93" />
+    <circle class="cls-3" cx="24.57" cy="11.36" r="3.93" />
+    <circle class="cls-3" cx="36.09" cy="11.36" r="3.93" />
+    <text class="cls-4" transform="translate(16.46 285.2)">&gt;
+        <tspan class="anim">_</tspan>
+    </text>
+    <text class="cls-5" transform="translate(12.53 39.03)">Usage:
+        <tspan class="cls-6">
+            <tspan x="0" y="12"> shell [options] -e string</tspan>
+            <tspan x="0" y="24"> execute string in V8</tspan>
+            <tspan x="0" y="36"> shell [options] file1 file2 ... filek</tspan>
+            <tspan x="0" y="48"> run JavaScript scripts in file1, file2, ..., filek</tspan>
+            <tspan x="0" y="60"> shell [options]</tspan>
+            <tspan x="0" y="72"> shell [options] --shell [file1 file2 ... filek]</tspan>
+            <tspan x="0" y="84"> run an interactive JavaScript shell</tspan>
+            <tspan x="0" y="96"> d8 [options] file1 file2 ... filek</tspan>
+            <tspan x="0" y="108"> d8 [options]</tspan>
+            <tspan x="0" y="120"> d8 [options] --shell [file1 file2 ... filek]</tspan>
+            <tspan x="0" y="132"> run the new debugging shell</tspan>
+        </tspan>
+        <tspan x="0" y="156">Options:</tspan>
+        <tspan class="cls-6">
+            <tspan x="0" y="168"> --use_strict (enforce strict mode)</tspan>
+            <tspan x="0" y="180"> type: bool default: false</tspan>
+            <tspan x="0" y="192"> --use_strong (enforce strong mode)</tspan>
+            <tspan x="0" y="204"> type: bool default: false</tspan>
+            <tspan x="0" y="216"> --strong_mode (experimental strong language mode)</tspan>
+            <tspan x="0" y="228"> type: bool default: false</tspan>
+        </tspan>
+    </text>
+</svg>
