@@ -1,3 +1,8 @@
+.block-revealer__content {
+  	transform: scale(1);
+	-webkite-transform: scale(1);
+}
+
 .block-revealer__element {
 	position: absolute;
 	top: 0;
